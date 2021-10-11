@@ -77,7 +77,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-#GEMS FOR API MODE
+#Some Gems to improve security and best practices
 
 #configuration in config/application.rb
 #gem 'rack-cors'
