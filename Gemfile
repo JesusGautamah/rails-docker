@@ -105,7 +105,7 @@ gem 'devise'
 gem 'sidekiq'
 
 # Bootstrap stylesheet
-gem 'bootstrap', '~> 4.1.0'
+gem 'bootstrap', '~> 4.3.1'
 
 # Pagy gem for pagination
 gem 'pagy'
