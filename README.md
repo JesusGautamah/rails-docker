@@ -1,9 +1,7 @@
-# README
+# Rails Docker
+### This repository can be used as template
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+Start point for rails development with easy heroku and docker configuration
 
 ## * Ruby version
                 Ruby 2.7.4
@@ -19,9 +17,15 @@ Things you may want to cover:
                  Rails 5.2
                  Ruby 2.7.4
 
+### Heroku Version
+                 Redis Server
+                 Rails 5.2
+                 Ruby 2.7.4
+                 Heroku-cli
+
 ## * Configuration
 
-### Local Common Server
+### Local Puma Server
 1) edit exports.sh with your db information
 
                 export DB_USER="YOUR DB USER"
@@ -48,3 +52,41 @@ Things you may want to cover:
 
                 bundle exec sidekiq -q default
 
+Enjoy your development on localhost:3000
+
+### Docker Configurantion
+
+1) Run in terminal
+
+                docker-compose build
+
+2) Run in terminal
+
+                docker-compose run web rake db:setup
+
+3) Run the application
+
+                docker-compose up
+
+### Heroku Configration
+
+1) Install heroku add-on dependencies
+
+                Heroku Postgres
+                Heroku Redis
+
+2) Select your git project with this archives in your deploy configuration in heroku dashboard
+
+3) Add to heroku cofig vars
+
+                SIDEKIQ_USERNAME: SET SIDEKIQ WEBVIEW USER
+                SIDEKIQ_PASSWORD: SET SIDEKIQ WEBVIEW PASSWORD
+
+4) Run in terminal with heroku-cli
+
+                heroku ps:scale web=1 -a YOUR-HEROKU-APP-NAME
+                heroku ps:scale worker+1 -a YOUR-HEROKU-APP-NAME
+     
+5) Monitor your appplication in terminal
+
+                heroku logs --tail -a
