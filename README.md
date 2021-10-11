@@ -68,7 +68,7 @@ Enjoy your development on localhost:3000
 3) Run the application
 
                 docker-compose up
-
+Enjoy your development on localhost:3000
 ### Heroku Configration
 
 1) Install heroku add-on dependencies
@@ -91,3 +91,5 @@ Enjoy your development on localhost:3000
 5) Monitor your appplication in terminal
 
                 heroku logs --tail -a
+
+Enjoy your application on production mode
