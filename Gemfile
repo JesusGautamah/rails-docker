@@ -101,6 +101,10 @@ gem 'redis'
 # Devise for user auth
 gem 'devise'
 
+# Omniauth
+
+gem 'omniauth'
+
 #Sidekiq for async jobs
 gem 'sidekiq'
 
