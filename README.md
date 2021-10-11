@@ -25,7 +25,7 @@ Start point for rails development with easy heroku and docker configuration
 
 ## * Configuration
 
-### Local Puma Server
+### Local Puma Server Configuration
 1) edit exports.sh with your db information
 
                 export DB_USER="YOUR DB USER"
@@ -54,7 +54,7 @@ Start point for rails development with easy heroku and docker configuration
 
 Enjoy your development on localhost:3000
 
-### Docker Configurantion
+### Docker Configuration
 #### sidekiq login can be configured in docker-compose.yml and .env
 
 1) Run in terminal
@@ -69,7 +69,7 @@ Enjoy your development on localhost:3000
 
                 docker-compose up
 Enjoy your development on localhost:3000
-### Heroku Configration
+### Heroku Configuration
 
 1) Install heroku add-on dependencies
 
