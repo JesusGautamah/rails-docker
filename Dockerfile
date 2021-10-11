@@ -1,11 +1,11 @@
 # syntax=docker/dockerfile:1
 FROM ruby:2.7.4
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
-WORKDIR /myapp
-COPY Gemfile /myapp/Gemfile
-COPY Gemfile.lock /myapp/Gemfile.lock
-COPY Rakefile /myapp/Rakefile
-COPY config/ /myapp/config
+WORKDIR /rails-docker
+COPY Gemfile /rails-docker/Gemfile
+COPY Gemfile.lock /rails-docker/Gemfile.lock
+COPY Rakefile /rails-docker/Rakefile
+COPY config/ /rails-docker/config
 RUN bundle install
 
 

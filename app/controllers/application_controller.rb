@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
     def home
 
-        TestingJob.perform_later()
+        #TestingJob.perform_later()
 
     end
 
