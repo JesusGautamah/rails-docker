@@ -56,6 +56,7 @@ Enjoy your development on localhost:3000
 
 ### Docker Configuration
 #### sidekiq login can be configured in docker-compose.yml and .env
+#### Build again everytime u edit something in config/
 
 1) Run in terminal
 
