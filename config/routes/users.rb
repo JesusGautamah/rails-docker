@@ -1,3 +1,6 @@
+require 'devise'
+
+
 devise_for :users, controllers: {
     confirmations: 'users/confirmations',
     unlocks: 'users/unlocks',
