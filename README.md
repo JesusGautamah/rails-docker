@@ -55,6 +55,7 @@ Start point for rails development with easy heroku and docker configuration
 Enjoy your development on localhost:3000
 
 ### Docker Configurantion
+#### sidekiq login can be configured in docker-compose.yml and .env
 
 1) Run in terminal
 
