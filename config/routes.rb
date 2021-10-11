@@ -13,7 +13,7 @@ Rails.application.routes.draw do
       ActiveSupport::SecurityUtils.secure_compare(::Digest::SHA256.hexdigest(password), ::Digest::SHA256.hexdigest(ENV["SIDEKIQ_PASSWORD"]))
   end
 
-  devise_for :users
+  draw :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: "application#home"
 end

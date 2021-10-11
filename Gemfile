@@ -86,7 +86,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #gem 'rack-attack'
 
 
-# active model serializers to build some json, configuration in config/initilizers/ams.rb
+#active model serializers to build some json, configuration in config/initilizers/ams.rb
 #gem 'active_model_serializers'
 
 # Use open-uri for requests

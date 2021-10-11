@@ -3,6 +3,17 @@
 
 Start point for rails development with easy heroku and docker configuration
 
+## Some gems
+
+                Devise
+                Pagy
+                Redis
+                Sidekiq
+                Cucumber Rails
+                Rspec Rails
+                Bootstrap
+                Pg Search
+
 ## * Ruby version
                 Ruby 2.7.4
 
