@@ -85,6 +85,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #configuration in config/initilizers/rack-attack.rb
 #gem 'rack-attack'
 
+#JWT Auth with JWT gem
+#gem 'jwt'
 
 #active model serializers to build some json, configuration in config/initilizers/ams.rb
 #gem 'active_model_serializers'
