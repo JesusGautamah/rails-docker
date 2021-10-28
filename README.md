@@ -25,8 +25,8 @@ Start point for rails development with easy heroku and docker configuration
 
 ### Common Version
                  Redis Server
-                 Rails 5.2
-                 Ruby 2.7.4
+                 Rails 6.1.4
+                 Ruby 3.0.0
 
 ### Heroku Version
                  Redis Server
