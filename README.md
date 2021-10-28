@@ -15,7 +15,7 @@ Start point for rails development with easy heroku and docker configuration
                 Pg Search
 
 ## * Ruby version
-                Ruby 2.7.4
+                Ruby 3.0.0
 
 ## * System dependencies
 
@@ -42,6 +42,15 @@ Start point for rails development with easy heroku and docker configuration
                 export DB_USER="YOUR DB USER"
                 export DB_PASS="YOUR DB PASSWORD"
                 export DB_HOST="YOUR DB HOST"
+
+2) uncomment host for local db and comment host for docker db in config/database.yml file
+
+                # set host for local development in exports.sh
+                # host: <%= ENV['DB_HOST'] %> 
+
+                # docker host
+                host: db  
+
 
 2) Run exports.sh in puma server terminal and sidekiq terminal
 

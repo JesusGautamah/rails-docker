@@ -20,7 +20,13 @@ default: &default
   username: <%= ENV['DB_USER'] %>
   password: <%= ENV['DB_PASS'] %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: <%= ENV['DB_HOST'] %>
+
+
+  # set host for local development in exports.sh
+  # host: <%= ENV['DB_HOST'] %> 
+
+  # docker host
+  host: db  
   
 
 development:

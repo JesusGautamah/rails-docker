@@ -12,23 +12,23 @@ module RailsDocker
     config.load_defaults 5.2
     config.active_job.queue_adapter = :sidekiq
 
-    #config.middleware.insert_before 0, Rack::Cors do
+    config.middleware.insert_before 0, Rack::Cors do
 
-      #allow do
+      allow do
 
-        #origins '*'
+        origins '*'
 
-        #resource '*',
+        resource '*',
 
-          #headers: :any,
+          headers: :any,
 
-          #methods: %i(get post put patch delete options head)
+          methods: %i(get post put patch delete options head)
 
-      #end
+      end
 
-     #end
+     end
 
-     #config.middleware.use Rack::Attack
+     config.middleware.use Rack::Attack
 
 
     # Settings in config/environments/* take precedence over those specified here.
