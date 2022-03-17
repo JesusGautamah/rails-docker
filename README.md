@@ -1,4 +1,4 @@
-# Rails Docker
+# Rails Docker(Deprecated)
 ### This repository can be used as template
 
 Start point for rails development with easy heroku and docker configuration
